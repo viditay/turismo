@@ -687,10 +687,6 @@ footer h4 {
 
 
 @media only screen and (orientation: portrait) {
-    body {
-        /* max-width: 90%; */
-        
-    }
 
     .header-banner p, .rights-end{
         font-size: 1.84rem;
