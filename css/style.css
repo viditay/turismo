@@ -81,7 +81,8 @@ header {
     background-position: center;
     margin: 0 auto 0 auto;
     padding: 37vh 0 25px 0;
-    border-radius: 3px;
+    /* border-radius: 3px; */
+    border-radius: 3px 3px 3px 0;
 }
 
 header p{
@@ -129,6 +130,16 @@ h2.promos{
     border-radius: 3px 3px 3px 0px;
 }
 
+h2.titulo{
+    font-family: var(--font-title);
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 15px 10px 10px 10px;
+    background: var(--color-gradient-viditay);
+    border-radius: 0px 3px 3px 3px;
+}
 
 div{
     padding-bottom: 25px;
