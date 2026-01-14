@@ -2,16 +2,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
+
+@font-face {
+  font-family: LinBio; /* set name */
+  src: url(../fonts/LinBiolinum_R_G.ttf); /* url of the font */
+}
+
+
+
 :root{
-    --font-title: 'Josefin Sans', sans-serif;
+    /* --font-title: 'Josefin Sans', sans-serif; */
     --font-text: 'Quicksand', sans-serif;
 
-    --color-selection: #a48ea0;
+    --font-title: 'LinBio', sans-serif;
+    /* --font-text: 'LinBio', sans-serif; */
 
-    --color-1: #dedede;
+    /* --color-selection: #a48ea0; */
+    --color-selection: #ddd0ae;
+
+    --color-1: #3d2f22;
     --color-2: #1f1f1f;
+    --color-h1: #6e3981;
+    --color-h2: #2b4b15;
+    /* --color-header:linear-gradient(to right, #e7d6b5, #ffffff, #e7d6b5); */
+    --color-header: #ffffff;
+    --color-titulo: #5c1f72;
 
-    --color-back: #000000;
+    /* --color-back: #000000; */
+    --color-back: #ffffff;
+    --color-text-shadow: #000000;
+
+    /* --color-back-gradient:linear-gradient(#ffffff, #a199b8,#332b45); */
+
     --color-back-new: #7d2274;
     --color-rights: #df87b6;
 
@@ -20,19 +42,20 @@
     --color-whatsapp: #0a66c2;
 
     /* --color-gradient-1:linear-gradient(to right, #000000, #533b6b); */
-    --color-gradient-1:linear-gradient(to left, #000000, #407430);
+    --color-gradient-1:linear-gradient(to left, #ffffff, #7ca76d);
     /* --color-gradient-2:linear-gradient(to right, #2c2038, #000000); */
     --color-gradient-2:linear-gradient(to right, #7b7b7b, #000000);
-    --color-gradient-3:linear-gradient(to right, #1f1f1f, #000000);
+    --color-gradient-3:linear-gradient(to right, #e7d6b5, #ffffff);
 
-    --color-gradient-viditay:linear-gradient(to right, #a45991, #000000);
-    --color-gradient-notas:linear-gradient(to right, #d35f5f, #000000);
+    --color-gradient-viditay:linear-gradient(to right, #a45991, #ffffff);
+    --color-gradient-notas:linear-gradient(to right, #d35f5f, #ffffff);
 }
 
 *{
     margin: 0;
     padding: 0;
     color: var(--color-1);
+    font-weight: 600;
 }
 
 *::selection{
@@ -41,7 +64,10 @@
 
 body {
     background-color: var(--color-back);
+    /* background-image: var(--color-back-gradient); */
     /* background: var(--color-gradient-background); */
+
+
     margin:  auto;
     padding: 0px 10px 10px 10px;
     justify-content: center;
@@ -52,8 +78,11 @@ header {
     
     position: sticky;
     top: 0;
-    background-color: #000000;
     z-index: 25;
+    background-color: var(--color-header);
+    /* background-image: var(--color-header); */
+    /* border-radius: 5px; */
+    padding: 0 1rem;
 }
 
 
@@ -73,6 +102,18 @@ header {
 
 
 
+.header-logo {
+    background-image: url("../profile/Viditay - Logo Color.svg");
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 0 auto;
+    padding: 25vh 0 25px 0;
+    /* border-radius: 3px; */
+    border-radius: 3px 3px 3px 0;
+}
+
 .header-banner {
     background-image: url("../profile/banner.jpg");
     background-size: cover;
@@ -90,7 +131,6 @@ header p{
     font-family: var(--font-text);
     /* text-transform: uppercase; */
     font-size: 1.25rem;
-    font-weight: 400;
     text-align: left;
     margin-left: 5px;
     /* text-shadow: var(--color-back) 0 0 3px; */
@@ -104,19 +144,21 @@ h1{
     text-align: left;
     /* margin-left: 5px; */
     padding: 25px 10px 10px 10px;
+    color: var(--color-h1);
     
     /* text-shadow: var(--color-back-new) 0 0 7px; */
 }
 
 h2{
     font-family: var(--font-title);
-    font-weight: 500;
-    font-size: 1.1rem;
+    font-weight: 900;
+    font-size: 1.25rem;
     text-transform: uppercase;
     text-align: left;
-    padding: 15px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
     background: var(--color-gradient-1);
     border-radius: 3px;
+    color: var(--color-h2);
 }
 
 h2.promos{
@@ -132,13 +174,15 @@ h2.promos{
 
 h2.titulo{
     font-family: var(--font-title);
-    font-weight: 500;
-    font-size: 1.1rem;
+    font-weight: 900;
+    font-size: 1.25rem;
+    font-style: italic;
     text-transform: uppercase;
     text-align: left;
-    padding: 15px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
     background: var(--color-gradient-viditay);
     border-radius: 0px 3px 3px 3px;
+    color: var(--color-titulo);
 }
 
 div{
@@ -279,6 +323,11 @@ li:nth-child(odd) {
     border-radius: 3px;
 }
 
+.marca-tag{    
+    margin-top: .75rem;
+    height: 3.5rem;
+    border-radius: 0 3px 3px 3px;
+}
 
 .promo-tag{    
     margin-top: .75rem;
@@ -431,6 +480,39 @@ li:nth-child(odd) {
     padding-top: 3px;   
 }
 
+.footer-icon{
+    /* filter: invert(100%); */
+    width: 12rem;
+    align-self: center;
+    padding: 50px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
+}
+
+.banner-icon{
+    /* filter: invert(100%); */
+    width: 15rem;
+    align-self: center;
+    /* padding: 0 0 5px 0; */
+    filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+}
+
+.header-icon{
+    /* filter: invert(100%); */
+    width: 12rem;
+    align-self: center;
+    padding: 50px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
+}
+
+
+
+.footer-link{
+    filter: invert(100%) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+    width: 2.25rem;
+    align-self: center;
+    padding-top: 3px;   
+    
+}
 
 
 .color-link{
@@ -606,8 +688,10 @@ footer h4 {
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
-    text-shadow: var(--color-back) 0 0 10px;
-    font-weight: 700;
+    /* text-shadow: var(--color-text-shadow) 0 0 5px; */
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+    font-weight: 900;
+    color: #ffffff;
     
 }
 
@@ -663,9 +747,18 @@ footer h4 {
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto 0 auto;
-    padding: 50px 0 60px 0;
+    padding: 50px 0 0px 0;
     border-radius: 3px;
+}
 
+.banner-image{
+    background-image:  url("../profile/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 0 auto;
+    padding: 0 0 250px 0;
+    border-radius: 3px;
 }
 
 
@@ -706,6 +799,7 @@ footer h4 {
     h1{
         /* font-size: 1.8rem; */
         font-size: 2.35vh;
+        color: var(--color-h1);
     }
 
 
