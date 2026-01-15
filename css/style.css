@@ -11,10 +11,10 @@
 
 
 :root{
-    /* --font-title: 'Josefin Sans', sans-serif; */
+    --font-title: 'Josefin Sans', sans-serif;
     --font-text: 'Quicksand', sans-serif;
 
-    --font-title: 'LinBio', sans-serif;
+    /* --font-title: 'LinBio', sans-serif; */
     /* --font-text: 'LinBio', sans-serif; */
 
     /* --color-selection: #a48ea0; */
@@ -155,7 +155,7 @@ h2{
     font-size: 1.25rem;
     text-transform: uppercase;
     text-align: left;
-    padding: 10px 10px 10px 10px;
+    padding: 15px 10px 10px 10px;
     background: var(--color-gradient-1);
     border-radius: 3px;
     color: var(--color-h2);
@@ -179,7 +179,7 @@ h2.titulo{
     font-style: italic;
     text-transform: uppercase;
     text-align: left;
-    padding: 10px 10px 10px 10px;
+    padding: 15px 10px 10px 10px;
     background: var(--color-gradient-viditay);
     border-radius: 0px 3px 3px 3px;
     color: var(--color-titulo);
