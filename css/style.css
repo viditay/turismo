@@ -175,7 +175,7 @@ h2.promos{
 h2.titulo{
     font-family: var(--font-title);
     font-weight: 900;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-style: italic;
     text-transform: uppercase;
     text-align: left;
@@ -304,14 +304,16 @@ li:nth-child(odd) {
 
 
 .qr_ig_image_center{
-    display: block;
+    display: flex;
     /* margin-left: auto; */
     /* margin-right: auto; */
-    max-width: 25vw;
-    max-height: 28vh;
-    margin: .5rem 0 .15rem 0;
+    /* max-width: 15vw; */
+    max-height: 20vh;
+    /* margin: .5rem 0 .15rem 0; */
+    /* margin: .5rem 0 .5rem 0; */
     /* min-width: 25%; */
     /* border-radius: 0 3px 3px 3px; */
+    padding-top: 1rem;
     border-radius: 7px;
     z-index: 1;
 }
@@ -837,11 +839,13 @@ footer h4 {
     
     
         .qr_ig_image_center{
-            display: block;
-            /* margin-left: auto;
-            margin-right: auto; */
-            max-width: 50%;
-            min-width: 25%;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            /* max-width: 100%; */
+            max-height: 30vh;
+            /* min-width: 25%; */
+            padding-top: 25px;
         }
 
         h1{
