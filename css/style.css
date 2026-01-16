@@ -491,11 +491,12 @@ li:nth-child(odd) {
 }
 
 .banner-icon{
-    /* filter: invert(100%); */
-    width: 15rem;
+    background-color: #ffffff;
+    border-radius: 100%;
+    min-width: 15%;
+    max-width: 25vh;
     align-self: center;
-    /* padding: 0 0 5px 0; */
-    filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+    /* filter: drop-shadow(3px 5px 0px rgba(160, 130, 70, 1)); */
 }
 
 .header-icon{
@@ -855,6 +856,16 @@ footer h4 {
 
         .header-banner p, .rights-end{
             font-size: 1.34rem;
+        }
+
+
+        .banner-icon{
+            background-color: #ffffff;
+            border-radius: 100%;
+            min-width: 20vh;
+            max-width: 25vw;
+            align-self: center;
+            /* filter: drop-shadow(3px 5px 0px rgba(160, 130, 70, 1)); */
         }
 
         .gallery-container{
